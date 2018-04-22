@@ -1,0 +1,10 @@
+<h2>Gallery</h2>
+<div class="row">
+        <div class="col-sm-6 col-md-4 col-xl-3 mb-3" *ngFor="let gal of galleries; let index = index">
+          <a href="javascript:void(0);">
+            <img class="img-thumbnail mb-3" src="../../assets/gallery/{{index+1}}.jpg" alt="Album screenshot" width="960" height="600">
+            <h5 class="mb-1">{{gal.title}}</h5>
+          </a>
+          <p class="text-muted">{{gal.description}}</p>
+        </div>
+</div>

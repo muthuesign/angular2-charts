@@ -1,0 +1,43 @@
+[
+    {
+      "key": "Total Experience",
+      "values": [
+        {
+          "label": ".Net(ASP.Net MVC)",
+          "value": 8
+        },
+        {
+          "label": "Web API",
+          "value": 5
+        },
+        {
+          "label": "C#, LINQ",
+          "value": 8
+        },
+        {
+          "label": ".Net Core",
+          "value": 2
+        },
+        {
+          "label": "MS Sql",
+          "value": 8
+        },
+        {
+          "label": "Angular(1.x to 5.0)",
+          "value": 4
+        },
+        {
+          "label": "typescript",
+          "value": 2
+        },
+        {
+          "label": "jQuery & js",
+          "value": 8
+        },
+        {
+          "label": "Html & css",
+          "value": 8
+        }
+      ]
+    }
+]
