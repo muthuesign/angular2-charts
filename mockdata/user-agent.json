@@ -1,0 +1,26 @@
+[
+    {
+      "label": "Google Chrome",
+      "value": 20
+    },
+    {
+      "label": "Firefox",
+      "value": 20
+    },
+    {
+      "label": "Internet Explorer",
+      "value": 10
+    },
+    {
+      "label": "Microsoft Edge",
+      "value": 20
+    },
+    {
+      "label": "Safari",
+      "value": 20
+    },
+    {
+      "label": "Opera & others",
+      "value": 10
+    }
+  ]
