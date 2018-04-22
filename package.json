@@ -39,7 +39,7 @@
     "@agm/core": "*"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.5",
+    "@angular/cli": "1.7.3",
     "@types/jasmine": "~2.8.0",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "^6.0.45",
