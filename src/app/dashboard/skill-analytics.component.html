@@ -1,13 +1,10 @@
-<div class="panel panel-inverse" data-sortable-id="index-1">
-    <div class="panel-heading">
-        <div class="panel-heading-btn">
-            <a href="javascript:;" class="btn-xs btn-icon fa fa-refresh btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
-        </div>
-        <h4 class="panel-title">My Skills Analytics</h4>
+<div class="card mb-4">
+    <div class="card-header">
+        <b>My Skills Analytics</b>
     </div>
-    <div class="panel-body">
-        <div id="interactive-chart" class="height-sm">
-           <nvd3 [options]="options" [data]="skills"></nvd3>
+    <div class="card-body p-1">
+        <div>
+            <nvd3 [options]="options" [data]="skills"></nvd3>
         </div>
     </div>
 </div>

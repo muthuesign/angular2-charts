@@ -1,41 +1,35 @@
-<div id="sidebar" class="sidebar">
-        <!-- begin sidebar scrollbar -->
-        <div data-scrollbar="true" data-height="100%">
-            <!-- begin sidebar user -->
-            <ul class="nav">
-                <li class="nav-profile">
-                    <a href="javascript:;" data-toggle="nav-profile">
-                        <div class="cover with-shadow"></div>
-                        <div class="image">
-                            
-                        </div>
-                        <div class="info">
-                            Muthu R
-                            <small>Web Application developer</small>
-                                <div class="mt-2">
-                                    <div class="rating" style="color: #ffff4c;">
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span>
-                                    </div>
-                                </div>
-                        </div>
-                        
-                    </a>
-                </li>
-            </ul>
-            <!-- end sidebar user -->
-            <!-- begin sidebar nav -->
-            <ul class="nav">
-                <li class="nav-header">Navigation</li>
-                <li routerLinkActive="active"><a routerLink="/dashboard"><i class="fa fa-th-large"></i> <span>Dashboard</span></a></li>
-                <li routerLinkActive="active"><a routerLink="/gallery"><i class="fa fa-image"></i> <span>Gallery</span></a></li>
-            </ul>
-            <!-- end sidebar nav -->
-        </div>
-        <!-- end sidebar scrollbar -->
+<nav class="navbar fixed-top navbar-default navbar-dark header-bg">
+    <button *ngIf="isMobile" class="navbar-toggler p-0" (click)="showSideNavToggle()">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <h6 class="text-white">Muthu's Portfolio</h6>
+    <mat-menu #menu="matMenu" yPosition="below" [overlapTrigger]="false" class="navbar-nav mr-auto mat-menu">
+        <mat-nav-list>
+            <mat-list-item [routerLink]="['/profile']">
+                <mat-icon matListIcon>
+                    <i class="fa fa-user"></i>
+                </mat-icon>
+                <span matLine>Profile</span>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item href="#">
+                <mat-icon matListIcon>
+                    <i class="fa fa-key"></i>
+                </mat-icon>
+                <span matLine>Logout</span>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-menu>
+    
+    <div>
+        <button mat-icon-button class="text-white">
+                <i class="fa fa-bell"></i>
+                <span class="badge badge-notify">3</span>
+        </button>
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="text-white">
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </button>
     </div>
-    <div class="sidebar-bg"></div>
-    <!-- end #sidebar -->
+</nav>
+
+

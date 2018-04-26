@@ -1,0 +1,39 @@
+<div>
+    <div class="header">
+        <div class="p-4">
+            <img src="./assets/css/images/user.jpg" class="rounded-circle user-img" />
+            <h6>Muthukrishnan R</h6>
+            <span class="text-info">Web Developer</span>
+            <div class="rating" style="color: #ffff4c;">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </div>
+    <div class="p-2">
+        <span class="text-secondary">Navigation</span>
+    </div>
+    <mat-nav-list>
+        <mat-list-item [routerLink]="['/dashboard']" routerLinkActive="router-link-active">
+            <mat-icon matListIcon>
+                <i class="fa fa-th-large"></i>
+            </mat-icon>
+            <span matLine>Dashboard</span>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/gallery']" routerLinkActive="router-link-active">
+            <mat-icon matListIcon>
+                <i class="fa fa-image" aria-hidden="true"></i>
+            </mat-icon>
+            <span matLine>Gallery</span>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['/profile']" routerLinkActive="router-link-active">
+            <mat-icon matListIcon>
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </mat-icon>
+            <span matLine>Profile</span>
+        </mat-list-item>
+    </mat-nav-list>
+</div>

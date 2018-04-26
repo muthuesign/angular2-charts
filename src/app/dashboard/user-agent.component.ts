@@ -17,7 +17,7 @@ export class UserAgentComponent {
         this.options =  {
             chart: {
                 type: 'pieChart',
-                height: 300,
+                height: 350,
                 donut: true, //Turn on Donut mode. Makes pie chart look tasty!
                 donutRatio: 0.45,//Configure how big you want the donut hole size to be
                 x: (d) => d.label,
